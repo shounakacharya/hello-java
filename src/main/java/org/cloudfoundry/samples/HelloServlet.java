@@ -51,8 +51,9 @@ public class HelloServlet extends HttpServlet {
 		response.setContentType("text/plain");
 		response.setStatus(200);
 		PrintWriter writer = response.getWriter();
-		writer.println("Hello from " + System.getenv("VCAP_APP_HOST") + ":" + System.getenv("VCAP_APP_PORT")+" Mongo Connection "+mongoOps());
-		writer.println("Message from redis for key shounak is "+redisOps());
+		//writer.println("Hello from " + System.getenv("VCAP_APP_HOST") + ":" + System.getenv("VCAP_APP_PORT")+" Mongo Connection "+mongoOps());
+		//writer.println("Message from redis for key shounak is "+redisOps());
+		writer.println("Java Code Succeeded");
 		writer.close();
 	}
 }
