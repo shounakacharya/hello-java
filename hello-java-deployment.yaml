@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: hello-java
-        image: myregistrydomain.com:5000/hello-java-jenkins
+        image: myregistrydomain.com:5000/hello-java-jenkins:$BUILD_NUMBER
         ports:
         - containerPort: 8080
       imagePullSecrets:
@@ -33,5 +33,3 @@ spec:
     protocol: TCP
   selector:
     app: hello-java
-  externalTrafficPolicy: Cluster
-
