@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: hello-java
-        image: shounakacharya/hello-java-jenkins
+        image: myregistrydomain.com:5000/hello-java-jenkins
         ports:
         - containerPort: 8080
       imagePullSecrets:
