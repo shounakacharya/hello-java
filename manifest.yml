@@ -1,5 +1,6 @@
 ---
 applications:
 - name: hello-java-app
-  path: hello-java-1.0.war
-  buildpack: java_buildpack
+  path: ./hello-java-1.0.war
+  buildpacks: 
+    - java_buildpack
